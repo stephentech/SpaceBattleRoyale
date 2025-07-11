@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\Engine_Source">
+      <UniqueIdentifier>{d1b65221-683b-4ff8-a787-32ae21ad83fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine_Source\PathNavigation">
+      <UniqueIdentifier>{31f3f061-efff-4f46-80bc-14e0ce9171f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine_Source\Physics">
+      <UniqueIdentifier>{cc00e854-76fa-450b-90e5-abb3d88272cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine_Source\Event">
+      <UniqueIdentifier>{1deca502-d7ec-4c55-907e-577d6c72de45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine_Source\SceneGraph">
+      <UniqueIdentifier>{b06e6141-e5c2-4b63-b306-2d8a26522022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine_Source\SceneGraph\GameObjects">
+      <UniqueIdentifier>{76084014-50e7-46c7-8952-2c254f6a775c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\WinGUI">
+      <UniqueIdentifier>{3aa26f16-169d-43e7-bc28-4e20e0acd4a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\EngineGUI">
+      <UniqueIdentifier>{0f6b61b1-1db1-410d-8b7b-d3118b135e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Engine_Source\Physics\Premitives">
+      <UniqueIdentifier>{cdf73ee6-14c2-467c-ac11-98afa265b3ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Navigator_win32.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="winGUI\res\splith.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="winGUI\res\splitv.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\CommonConversion.h">
+      <Filter>Source\Engine_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\game.h">
+      <Filter>Source\Engine_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Matrix.h">
+      <Filter>Source\Engine_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\targetver.h">
+      <Filter>Source\Engine_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\timer.h">
+      <Filter>Source\Engine_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\vector.h">
+      <Filter>Source\Engine_Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\PathNavigation\PathNavigator.h">
+      <Filter>Source\Engine_Source\PathNavigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Physics\Physics.h">
+      <Filter>Source\Engine_Source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Physics\PhysicsObject.h">
+      <Filter>Source\Engine_Source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Physics\QuadTreeDataStructure.h">
+      <Filter>Source\Engine_Source\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Event\EventBase.h">
+      <Filter>Source\Engine_Source\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\SceneGraph\ObjectManager_DoublyLinkedList.h">
+      <Filter>Source\Engine_Source\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\SceneGraph\ObjectManager.h">
+      <Filter>Source\Engine_Source\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\object.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\ObjectTest.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Ship.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\ShipControllerAI.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\ShipControllerAI2.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\ShipControllerBase.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\ShipControllerPlayer.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Sun.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\WeaponExplosives.h">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\Container.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\dialog.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\EditView.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\gdi.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\globals.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\image_list.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\Layout.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\list_view.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\Notification.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\Object.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\opengl_view.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\Panel.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\scroll_view.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\sdi_window.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\tabbed_view.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\tabstrip.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\TextEdit.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\tree_view.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\Types.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\view.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\window.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="winGUI\wingui.h">
+      <Filter>Source\WinGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineGUI\EngWindow.h">
+      <Filter>Source\EngineGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineGUI\GameSpace.h">
+      <Filter>Source\EngineGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Physics\Box.h">
+      <Filter>Source\Engine_Source\Physics\Premitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Physics\Circle.h">
+      <Filter>Source\Engine_Source\Physics\Premitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine_Source\Physics\Ray.h">
+      <Filter>Source\Engine_Source\Physics\Premitives</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\CommonConversions.cpp">
+      <Filter>Source\Engine_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\game.cpp">
+      <Filter>Source\Engine_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\globalVarsTweekable.cpp">
+      <Filter>Source\Engine_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\timer.cpp">
+      <Filter>Source\Engine_Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\PathNavigation\PathNavigation.cpp">
+      <Filter>Source\Engine_Source\PathNavigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Physics\Physics.cpp">
+      <Filter>Source\Engine_Source\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Physics\PhysicsObject.cpp">
+      <Filter>Source\Engine_Source\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Physics\QuadTreeDataStructure.cpp">
+      <Filter>Source\Engine_Source\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Event\EventBase.cpp">
+      <Filter>Source\Engine_Source\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\SceneGraph\ObjectManager_DoublyLinkedList.cpp">
+      <Filter>Source\Engine_Source\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\object.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\ObjectTest.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Ship.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\ShipControllerAI.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\ShipControllerAI2.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\ShipControllerPlayer.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Sun.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\WeaponExplosive.cpp">
+      <Filter>Source\Engine_Source\SceneGraph\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\Container.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\dialog.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\gdi.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\list_view.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\Notification.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\Panel.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\PanelBar.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\scroll_view.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\sdi_window.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\tabbed_view.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\tabstrip.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\TextEdit.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\tree_view.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\view.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\window.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="winGUI\wingui.cpp">
+      <Filter>Source\WinGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineGUI\EngWindow.cpp">
+      <Filter>Source\EngineGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineGUI\GameSpace.cpp">
+      <Filter>Source\EngineGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Physics\Box.cpp">
+      <Filter>Source\Engine_Source\Physics\Premitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Physics\Circle.cpp">
+      <Filter>Source\Engine_Source\Physics\Premitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine_Source\Physics\Ray.cpp">
+      <Filter>Source\Engine_Source\Physics\Premitives</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Navigator_win32.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

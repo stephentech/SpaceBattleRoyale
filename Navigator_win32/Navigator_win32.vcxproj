@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0BA78953-C690-4D8C-B652-8EE6B0CE8E33}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Navigator_win32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Engine_Source\;$(ProjectDir)\winGUI;$(ProjectDir)\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Navigator_win32.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico" />
+    <None Include="winGUI\res\splith.cur" />
+    <None Include="winGUI\res\splitv.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EngineGUI\EngWindow.h" />
+    <ClInclude Include="EngineGUI\GameSpace.h" />
+    <ClInclude Include="Engine_Source\CommonConversion.h" />
+    <ClInclude Include="Engine_Source\Event\EventBase.h" />
+    <ClInclude Include="Engine_Source\game.h" />
+    <ClInclude Include="Engine_Source\Matrix.h" />
+    <ClInclude Include="Engine_Source\object.h" />
+    <ClInclude Include="Engine_Source\ObjectTest.h" />
+    <ClInclude Include="Engine_Source\PathNavigation\PathNavigator.h" />
+    <ClInclude Include="Engine_Source\Physics\Box.h" />
+    <ClInclude Include="Engine_Source\Physics\Circle.h" />
+    <ClInclude Include="Engine_Source\Physics\Physics.h" />
+    <ClInclude Include="Engine_Source\Physics\PhysicsObject.h" />
+    <ClInclude Include="Engine_Source\Physics\QuadTreeDataStructure.h" />
+    <ClInclude Include="Engine_Source\Physics\Ray.h" />
+    <ClInclude Include="Engine_Source\SceneGraph\ObjectManager.h" />
+    <ClInclude Include="Engine_Source\SceneGraph\ObjectManager_DoublyLinkedList.h" />
+    <ClInclude Include="Engine_Source\Ship.h" />
+    <ClInclude Include="Engine_Source\ShipControllerAI.h" />
+    <ClInclude Include="Engine_Source\ShipControllerAI2.h" />
+    <ClInclude Include="Engine_Source\ShipControllerBase.h" />
+    <ClInclude Include="Engine_Source\ShipControllerPlayer.h" />
+    <ClInclude Include="Engine_Source\Sun.h" />
+    <ClInclude Include="Engine_Source\targetver.h" />
+    <ClInclude Include="Engine_Source\timer.h" />
+    <ClInclude Include="Engine_Source\vector.h" />
+    <ClInclude Include="Engine_Source\WeaponExplosives.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="winGUI\Container.h" />
+    <ClInclude Include="winGUI\dialog.h" />
+    <ClInclude Include="winGUI\EditView.h" />
+    <ClInclude Include="winGUI\gdi.h" />
+    <ClInclude Include="winGUI\globals.h" />
+    <ClInclude Include="winGUI\image_list.h" />
+    <ClInclude Include="winGUI\Layout.h" />
+    <ClInclude Include="winGUI\list_view.h" />
+    <ClInclude Include="winGUI\Notification.h" />
+    <ClInclude Include="winGUI\Object.h" />
+    <ClInclude Include="winGUI\opengl_view.h" />
+    <ClInclude Include="winGUI\Panel.h" />
+    <ClInclude Include="winGUI\scroll_view.h" />
+    <ClInclude Include="winGUI\sdi_window.h" />
+    <ClInclude Include="winGUI\tabbed_view.h" />
+    <ClInclude Include="winGUI\tabstrip.h" />
+    <ClInclude Include="winGUI\TextEdit.h" />
+    <ClInclude Include="winGUI\tree_view.h" />
+    <ClInclude Include="winGUI\Types.h" />
+    <ClInclude Include="winGUI\view.h" />
+    <ClInclude Include="winGUI\window.h" />
+    <ClInclude Include="winGUI\wingui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EngineGUI\EngWindow.cpp" />
+    <ClCompile Include="EngineGUI\GameSpace.cpp" />
+    <ClCompile Include="Engine_Source\CommonConversions.cpp" />
+    <ClCompile Include="Engine_Source\Event\EventBase.cpp" />
+    <ClCompile Include="Engine_Source\game.cpp" />
+    <ClCompile Include="Engine_Source\globalVarsTweekable.cpp" />
+    <ClCompile Include="Engine_Source\object.cpp" />
+    <ClCompile Include="Engine_Source\ObjectTest.cpp" />
+    <ClCompile Include="Engine_Source\PathNavigation\PathNavigation.cpp" />
+    <ClCompile Include="Engine_Source\Physics\Box.cpp" />
+    <ClCompile Include="Engine_Source\Physics\Circle.cpp" />
+    <ClCompile Include="Engine_Source\Physics\Physics.cpp" />
+    <ClCompile Include="Engine_Source\Physics\PhysicsObject.cpp" />
+    <ClCompile Include="Engine_Source\Physics\QuadTreeDataStructure.cpp" />
+    <ClCompile Include="Engine_Source\Physics\Ray.cpp" />
+    <ClCompile Include="Engine_Source\SceneGraph\ObjectManager_DoublyLinkedList.cpp" />
+    <ClCompile Include="Engine_Source\Ship.cpp" />
+    <ClCompile Include="Engine_Source\ShipControllerAI.cpp" />
+    <ClCompile Include="Engine_Source\ShipControllerAI2.cpp" />
+    <ClCompile Include="Engine_Source\ShipControllerPlayer.cpp" />
+    <ClCompile Include="Engine_Source\Sun.cpp" />
+    <ClCompile Include="Engine_Source\timer.cpp" />
+    <ClCompile Include="Engine_Source\WeaponExplosive.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="winGUI\Container.cpp" />
+    <ClCompile Include="winGUI\dialog.cpp" />
+    <ClCompile Include="winGUI\gdi.cpp" />
+    <ClCompile Include="winGUI\list_view.cpp" />
+    <ClCompile Include="winGUI\Notification.cpp" />
+    <ClCompile Include="winGUI\Panel.cpp" />
+    <ClCompile Include="winGUI\PanelBar.cpp" />
+    <ClCompile Include="winGUI\scroll_view.cpp" />
+    <ClCompile Include="winGUI\sdi_window.cpp" />
+    <ClCompile Include="winGUI\tabbed_view.cpp" />
+    <ClCompile Include="winGUI\tabstrip.cpp" />
+    <ClCompile Include="winGUI\TextEdit.cpp" />
+    <ClCompile Include="winGUI\tree_view.cpp" />
+    <ClCompile Include="winGUI\view.cpp" />
+    <ClCompile Include="winGUI\window.cpp" />
+    <ClCompile Include="winGUI\wingui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Navigator_win32.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
